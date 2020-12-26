@@ -1,0 +1,142 @@
+body.tax-type {
+  .header-layout {
+    min-height: 500px;
+  }
+}
+
+.header-layout {
+  min-height: 600px;
+  position: relative;
+  color: #fff;
+
+  .description {
+    font-size: 19px;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+
+    @media (min-width: map-get( $grid-breakpoints, 'sm' ) ) {
+      font-size: 23px;
+    }
+
+    @media (min-width: map-get( $grid-breakpoints, 'md' ) ) {
+      font-size: 26px;
+    }
+
+    @media (min-width: map-get( $grid-breakpoints, 'xl' ) ) {
+      font-size: 30px;
+      text-align: left;
+    }
+  }
+
+  .page-title {
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 4px 4px rgba(0,0,0,0.42);
+
+    @media (min-width: map-get( $grid-breakpoints, 'xl' ) ) {
+      text-align: left;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    @extend .bg-dot;
+  }
+
+  .brand-telephone {
+    background: white;
+    padding: 12px 26px;
+    border-radius: 30px;
+    color: black;
+    line-height: 1;
+    a {
+      text-decoration: none;
+      color: black;
+
+      &:visited {
+        color: #000;
+      }
+    }
+  }
+
+  .brand-logo {
+    line-height: 1;
+    display: block;
+  }
+
+  .brand-name {
+    display: none;
+
+    .small {
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    @media (min-width: map-get( $grid-breakpoints, 'sm' ) ) {
+      display: block;
+      font-size: 16px;
+    }
+  }
+
+  .service {
+    font-size: 16px;
+    color: #ecc69b;
+    //font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+
+    @media (min-width: map-get( $grid-breakpoints, 'sm' ) ) {
+      //font-size: 21px;
+    }
+
+    @media (min-width: map-get( $grid-breakpoints, 'md' ) ) {
+     // font-size: 26px;
+    }
+
+    @media (min-width: map-get( $grid-breakpoints, 'lg' ) ) {
+      //font-size: 24px;
+    }
+
+    @media (min-width: map-get( $grid-breakpoints, 'xl' ) ) {
+      text-align: left;
+    }
+  }
+
+  .slogan {
+    font-size: 19px;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+
+    @media (min-width: map-get( $grid-breakpoints, 'sm' ) ) {
+      font-size: 23px;
+    }
+
+    @media (min-width: map-get( $grid-breakpoints, 'md' ) ) {
+      font-size: 26px;
+    }
+
+    @media (min-width: map-get( $grid-breakpoints, 'lg' ) ) {
+      font-size: 30px;
+    }
+
+    @media (min-width: map-get( $grid-breakpoints, 'xl' ) ) {
+      text-align: left;
+    }
+  }
+
+  .top-layout, .middle-layout, .bottom-layout {
+    position: relative;
+  }
+
+  .top-layout {
+    background: rgba(0,0,0,0.15);
+
+    .small {
+      color: #c1996c;
+    }
+  }
+}

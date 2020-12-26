@@ -1,0 +1,39 @@
+.pagination {
+  margin: 25px 0;
+  text-align: center;
+  width: 100%;
+
+  .screen-reader-text {
+    display: none;
+  }
+
+  .page-numbers {
+    display: inline-block;
+    border: none;
+    margin-right: 5px;
+    line-height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+    background: #f06c00;
+    color: #fff;
+    text-decoration: none;
+
+
+    &:hover {
+      background: darken(#f06c00, 10%);
+      transition: background 0.3s ease;
+    }
+
+    &.current {
+      background: $color-main-light;
+      color: #fff;
+    }
+
+    &.dots {
+      &:hover {
+        background: none;
+      }
+    }
+  }
+}

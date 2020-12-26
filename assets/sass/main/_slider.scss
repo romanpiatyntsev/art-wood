@@ -1,0 +1,70 @@
+.slick-slider {
+  position: relative;
+  margin: 0 -15px 0 -18px;
+  background: $color-main;
+
+  &.variable-width {
+
+    img {
+      max-height: 200px;
+      width: auto;
+      padding: 0 3px;
+    }
+  }
+}
+
+.slider-item {
+  outline: none;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+
+  &.slick-prev {
+    left: 0;
+  }
+
+  &.slick-next {
+    right: 0;
+  }
+}
+
+
+.slick-slider {
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none !important;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 50px;
+    background: none;
+    color: white;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+
+    @media (min-width: map-get( $grid-breakpoints, 'lg' ) ) {
+      display: block !important;
+    }
+  }
+
+  .slick-prev {
+    left: 10px;
+    z-index: 10;
+  }
+
+  .slick-next {
+    right: 10px;
+    z-index: 10;
+  }
+}

@@ -1,0 +1,76 @@
+body {
+  position: relative;
+  font-size: 18px;
+  line-height: 1.45;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5 {
+  color: black;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  width: 100%;
+  margin: 1em 0;
+}
+
+h1 {
+  font-size: 48px;
+
+  @media (min-width: map-get( $grid-breakpoints, 'sm' ) ) {
+    font-size: 64px;
+  }
+
+  @media (min-width: map-get( $grid-breakpoints, 'md' ) ) {
+    font-size: 74px;
+  }
+
+  @media (min-width: map-get( $grid-breakpoints, 'lg' ) ) {
+    font-size: 79px;
+  }
+
+  @media (min-width: map-get( $grid-breakpoints, 'xl' ) ) {
+    font-size: 83px;
+  }
+}
+
+h2 {
+  font-size: 27px;
+
+  @media (min-width: map-get( $grid-breakpoints, 'sm' ) ) {
+    font-size: 29px;
+  }
+
+  @media (min-width: map-get( $grid-breakpoints, 'md' ) ) {
+    font-size: 32px;
+  }
+
+  @media (min-width: map-get( $grid-breakpoints, 'lg' ) ) {
+    font-size: 38px;
+  }
+
+  @media (min-width: map-get( $grid-breakpoints, 'xl' ) ) {
+    font-size: 43px;
+  }
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p, ul, li {
+  line-height: 1.4;
+}
+
+p {
+  margin: 0;
+  padding: 0 0 1em;
+}
+
+b, strong {
+  font-weight: bold;
+}
